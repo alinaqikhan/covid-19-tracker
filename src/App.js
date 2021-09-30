@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import './stylesheets/App.css';
 import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 
 export const App = () => {
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState({});
 
   useEffect(() => {
     const getData = async () => {
-      const fetchedData = await fetchData();
-      setData({data: fetchedData});
+      const data = await fetchData();
+      setData(data)
     }
     getData();
   }, [])
