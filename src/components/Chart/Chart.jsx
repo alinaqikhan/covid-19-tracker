@@ -7,7 +7,6 @@ import styles from './Chart.module.css';
 export const Chart = () => {
 
     const [dailyData, setDailyData] = useState([]);
-    console.log(dailyData);
 
     useEffect(() => {
         const getDailyData = async () => {
