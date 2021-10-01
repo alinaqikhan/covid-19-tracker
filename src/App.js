@@ -24,6 +24,7 @@ export const App = () => {
 
   return (
     <div className={styles.container}>
+      <img src="https://raw.githubusercontent.com/adrianhajdin/project_corona_tracker/master/src/images/image.png" className={styles.image} alt="COVID-19" />
       <Cards data={data}/>
       <CountryPicker handleCountryChange={handleCountryChange}/>
       <Chart data={data} country={country}/>
