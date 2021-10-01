@@ -16,8 +16,8 @@ export const Cards = ({ data }) => {
         <div className={styles.container}>
             <Grid container spacing={3} justifyContent="center">
                 <CardComponent className={styles.infected} cardTitle="Infected" value={confirmed.value} lastUpdate={lastUpdate} cardSubtitle="Number of active cases of COVID-19"/>
-                <CardComponent className={styles.recovered} cardTitle="Recovered" value={recovered.value} lastUpdate={lastUpdate} cardSubtitle="Number of recoveries of COVID-19"/>
                 <CardComponent className={styles.deaths} cardTitle="Deaths" value={deaths.value} lastUpdate={lastUpdate} cardSubtitle="Number of deaths"/>
+                <CardComponent className={styles.recovered} cardTitle="Recovered" value={recovered.value} lastUpdate={lastUpdate} cardSubtitle="Number of recoveries of COVID-19"/>
             </Grid>
         </div>
     )
